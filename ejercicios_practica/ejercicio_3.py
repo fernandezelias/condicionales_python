@@ -15,7 +15,7 @@
 # Objetico
 # Verificar la calificación de un estudiante según su
 # puntaje en un examen
-puntaje = 70
+puntaje = 90
 
 # Alumno:
 # Deberá crear una serie de considiconales
@@ -31,8 +31,20 @@ nota = ""
 # Si el puntaje es mayor igual a 60 --> nota = "D"
 # Si el puntaje es menor a  60      --> nota = "F"
 
+if puntaje >= 90:
+    nota = "A"
+elif puntaje >= 80:
+    nota = "B"
+elif puntaje >= 70:
+    nota = "C"
+elif puntaje >= 60:
+    nota = "D"
+elif puntaje < 60:
+    nota = "F"
+
 # Recuerde utilizar un solo bloque condicional
 # armado de if y múltiples elif
 # Puede consultar el ejemplo de clase 2 como referencia
 
 # Imprimir en pantalla la variable nota
+print("La nota del alumno es", nota)
